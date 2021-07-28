@@ -1,32 +1,6 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
-  /* Font Families */
-
-  --header-font: "Open Sans", sans-serif;
-  --sub-header-font: "Roboto", sans-serif;
-  --para-font: "Poppins", sans-serif;
-
-  /* Document Colors */
-
-  --main-bg-color: #353b48;
-  --theme-color: #ff404b;
-  --head-text-color: #ffffff;
-  --para-text-color: #d9d9d9;
-
   /* Nav Height */
-
   --header-height: 10vh;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 nav {
