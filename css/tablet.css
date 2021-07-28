@@ -1,0 +1,251 @@
+/* --=====Navigation Bar=====-- */
+
+nav {
+  height: 15vh;
+  padding: 0vh 6vw;
+}
+
+.logoside h3 {
+  font-size: 3.5vw;
+}
+
+.menuside ul li a {
+  padding: 1vh 1vw;
+  margin: 0vh 0.5vw;
+  font-size: 2.5vw;
+}
+
+/* --=====Home Section=====-- */
+
+#home {
+  padding: 2vh 0;
+}
+
+.homeInfo {
+  padding: 3vh 0vw;
+  padding-left: 4vw;
+}
+
+.homeInfo h1 {
+  font-size: 6vw;
+  margin: 2vh 0;
+}
+
+.homeInfo p {
+  font-size: 3.5vw;
+  line-height: initial;
+  text-shadow: 1.5px 1.5px 3px var(--theme-color);
+}
+
+.joinButton {
+  padding: 1vh 2vw;
+  font-size: 2.3vw;
+  margin: 2vh 0;
+  margin-top: 6vh;
+}
+
+.carryquote {
+  font-size: 3vw;
+  margin: 3vh 0;
+}
+
+/* --=====About Section=====-- */
+
+#about {
+  display: flex;
+  align-items: center;
+}
+
+.aboutInfo {
+  flex-basis: 60%;
+  padding: 0vh 2vw;
+}
+
+.aboutInfo h4 {
+  font-size: 3.5vw;
+  margin: 3vh 0;
+}
+
+.aboutInfo h2 {
+  font-size: 4.5vw;
+  width: 90%;
+}
+
+.aboutInfo p {
+  margin: 5vh 0;
+  letter-spacing: 2px;
+  font-size: 2.5vw;
+  line-height: 2.5vh;
+  width: 90%;
+}
+
+.exploreButton {
+  padding: 1vh 2vw;
+  font-size: 2.3vw;
+  margin: 0;
+}
+
+/* --=====Service Section=====-- */
+
+#service {
+  padding: 3vh 0;
+}
+
+#service > h4 {
+  font-size: 3.5vw;
+  margin: 3vh 0;
+}
+
+#service h2 {
+  font-size: 4.5vw;
+}
+
+.cardContainer {
+  margin-top: 0vh;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 7vh 2vw;
+  clip-path: ellipse(45% 25% at 0% 0%);
+  -webkit-clip-path: ellipse(45% 25% at 0% 0%);
+  width: 40vw;
+}
+
+.card h4 {
+  font-size: 3.5vw;
+  margin: 4vh 0;
+}
+
+.card p {
+  font-size: 2.8vw;
+}
+
+.baapCard {
+  margin: 3vh 0;
+}
+
+.toFade {
+  font-size: 4vw;
+}
+
+/* --=====Team Section=====-- */
+
+#event {
+  padding: 3vh 0;
+}
+
+#event > h4 {
+  font-size: 3.5vw;
+  margin: 3vh 0;
+}
+
+#event > h2 {
+  font-size: 4.5vw;
+}
+.eventInfo h4 {
+  font-size: 3vw;
+}
+
+.eventInfo p {
+  font-size: 2.4vw;
+  letter-spacing: 1px;
+  line-height: 2vh;
+  margin: 3vh 0;
+}
+
+.eventCard img {
+  width: 4vw;
+  margin-right: 0.7vw;
+}
+
+.eventCard span {
+  font-size: 2.4vw;
+}
+
+.toJarallex:nth-child(2) {
+  margin: 5vh 0;
+}
+
+#tekkenImg {
+  margin-left: 10vw;
+}
+
+/* --=====Join Section=====-- */
+
+#join {
+  padding: 3vh 0;
+}
+
+#join h4 {
+  font-size: 3.5vw;
+  margin: 3vh 0;
+}
+
+#join h2 {
+  font-size: 4.5vw;
+}
+
+.formContainer {
+  margin: 4vh 0;
+  flex-direction: column;
+}
+
+.firstPref {
+  padding: 3vh 3vw;
+}
+
+.firstPref span {
+  font-size: 3vw;
+  margin: 2vh 0;
+}
+
+.firstPref input {
+  padding: 1vh 2vw;
+  margin-right: 3vw;
+  font-size: 2.5vw;
+}
+
+.secondPref {
+  padding: 3vh 3vw;
+}
+
+.secondPref span {
+  font-size: 3vw;
+  margin: 2vh 0;
+}
+
+textarea {
+  padding: 2vh 2vw;
+  font-size: 2.5vw;
+}
+
+.submitPref {
+  padding: 1vh 2vw;
+}
+
+.submitPref input {
+  padding: 1.5vh 3vw;
+  margin: 0 2vw;
+  font-size: 3vw;
+}
+
+/* --=====Footer=====-- */
+
+.footLogo {
+  font-size: 4vw;
+}
+
+.copyright {
+  font-size: 3.5vw;
+}
+
+.legalPolicy span {
+  margin: 0 1vw;
+  font-size: 3.5vw;
+}
+
+.legalPolicy a {
+  font-size: 2.5vw;
+  letter-spacing: 1px;
+}

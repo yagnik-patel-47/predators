@@ -1,0 +1,443 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Font Families */
+
+  --header-font: "Open Sans", sans-serif;
+  --sub-header-font: "Roboto", sans-serif;
+  --para-font: "Poppins", sans-serif;
+
+  /* Document Colors */
+
+  --main-bg-color: #353b48;
+  --theme-color: #ff404b;
+  --head-text-color: #ffffff;
+  --para-text-color: #d9d9d9;
+
+  /* Nav Height */
+
+  --header-height: 10vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: grid;
+  padding: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: var(--header-height);
+  height: var(--header-height);
+  overflow: hidden;
+  grid-template-areas: "logo burger" "menu menu";
+  align-items: center;
+}
+
+.hamburger {
+  display: initial;
+  color: var(--theme-color);
+  grid-area: burger;
+  margin: 0 4vw;
+  justify-self: end;
+}
+
+.hamburger i {
+  color: var(--head-text-color);
+  font-size: 5vh;
+}
+
+.logoside {
+  grid-area: logo;
+  margin: 0 8vw;
+}
+
+.logoside h3 {
+  font-size: 2.5vh;
+  font-family: var(--header-font);
+  font-weight: 700;
+}
+
+.menuside {
+  grid-area: menu;
+  /* background: var(--theme-color); */
+  padding: 1vh 0;
+  justify-self: center;
+  align-self: start;
+  width: 100%;
+  clip-path: circle(100px at 150vw -55vh);
+  -webkit-clip-path: circle(100px at 150vw -55vh);
+  background-color: #ff404b;
+  line-height: initial;
+}
+
+.clipped {
+  clip-path: circle(1000px at 150vw -55vh);
+  -webkit-clip-path: circle(1000px at 150vw -55vh);
+  transition: all 1s ease 0.2s;
+}
+
+.menuside ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.menuside ul li a {
+  display: flex;
+  padding: 0.5vh 3vw;
+  border-radius: 0.7vh;
+  margin: 0.5vh 0vw;
+  font-size: 2.5vh;
+}
+
+.menuside ul li a.active {
+  color: var(--head-text-color);
+  background-color: var(--main-bg-color);
+}
+
+.show-menu {
+  height: 40vh;
+  transition: all 0.5s ease;
+}
+
+/* Home Section */
+
+#home {
+  padding: 3vh 0;
+  margin: 0;
+}
+
+.homeInfo {
+  padding: 0 6vw;
+}
+
+.homeContainer {
+  flex-direction: column;
+}
+
+.homeInfo h1 {
+  font-size: 6vh;
+  margin: 2vh 0;
+}
+
+.homeInfo p {
+  font-size: 3.5vh;
+  word-spacing: 0.5vw;
+  line-height: initial;
+}
+
+.joinButton {
+  font-size: 2vh;
+  padding: 1.5vh 4vw;
+  border-radius: 0.7vh;
+  margin: 5vh 0;
+}
+
+.carryquote {
+  font-size: 2.5vh;
+  margin: 0;
+}
+
+/* About Section */
+
+#about {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.aboutInfo {
+  flex-basis: 60%;
+  padding: 0vh 10vw;
+}
+
+.aboutInfo h4 {
+  font-size: 3vh;
+  text-align: center;
+  margin: 5vh 0;
+}
+
+.aboutInfo h2 {
+  font-size: 3.5vh;
+  width: 100%;
+}
+
+.aboutInfo p {
+  margin: 5vh 0;
+  font-size: 2vh;
+  width: 100%;
+}
+
+.exploreButton {
+  padding: 1.5vh 4vw;
+  border-radius: 0.7vh;
+  font-size: 2vh;
+  margin: 2vh 0;
+}
+
+#galaxyOps {
+  position: relative;
+  left: 100%;
+  max-width: 80%;
+  height: auto;
+  opacity: 1;
+}
+
+/* --=====Service Section=====-- */
+
+#service {
+  padding: 2vh 0;
+}
+
+#service > h4 {
+  font-size: 3vh;
+}
+
+#service h2 {
+  font-size: 3.5vh;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4vh;
+  padding: 5vh 0;
+  row-gap: 7vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: initial;
+  padding: 8vh 5vw;
+  width: 70vw;
+  height: auto;
+}
+
+.baapCard:hover > .card {
+  border-radius: 1vh;
+}
+
+.cardContainer .card img {
+  filter: invert(1);
+  height: auto;
+  width: 40%;
+}
+
+.card h4 {
+  font-size: 3vh;
+  margin: 5vh 0;
+}
+
+.card p {
+  font-size: 2.2vh;
+}
+
+.toFade {
+  font-size: 4vh;
+}
+
+/* --=====Team Section=====-- */
+
+#event {
+  padding: 3vh 0;
+}
+
+#event > h4 {
+  font-size: 3vh;
+  margin: 3vh 0;
+}
+
+#event > h2 {
+  font-size: 3.5vh;
+}
+
+.eventContainer {
+  margin-top: 7vh;
+}
+
+.toJarallex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 6vh;
+}
+
+.eventImg {
+  flex-basis: initial;
+}
+
+.eventImg img {
+  width: 40vh;
+  height: auto;
+}
+
+.race,
+.modcombat {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.eventInfo {
+  margin-top: 4vh;
+  flex-basis: initial;
+}
+
+.eventInfo h4 {
+  font-size: 2.5vh;
+}
+
+.eventInfo p {
+  font-size: 2vh;
+  margin: 2vh 0;
+}
+
+.iconInfo {
+  display: flex;
+  width: max-content;
+}
+
+.eventCard {
+  display: flex;
+  align-items: center;
+  margin-right: 5vw;
+}
+
+.eventCard img {
+  width: 3vh;
+  height: auto;
+  margin-right: 0.7vw;
+}
+
+.eventCard span {
+  font-size: 2vh;
+}
+
+#tekkenImg {
+  width: 40vw;
+  height: auto;
+}
+
+#modImg {
+  width: 40vw;
+  height: auto;
+}
+
+/* --=====Join Section=====-- */
+
+#join {
+  padding: 3vh 0;
+}
+
+#join h4 {
+  font-size: 3vh;
+  margin: 3vh 0;
+}
+
+#join h2 {
+  font-size: 3.5vh;
+}
+
+.formContainer {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstPref {
+  display: flex;
+  flex-direction: column;
+  padding: 3vh 3vw;
+  width: fit-content;
+}
+
+.firstPref span {
+  display: block;
+  font-size: 2.5vh;
+  margin: 3vh 0;
+}
+
+.firstPref input {
+  padding: 1vh 2vw;
+  margin: 1vh 0;
+  font-size: 2vh;
+  outline: none;
+}
+
+::placeholder {
+  color: #545861;
+  font-family: var(--sub-header-font);
+  font-weight: bold;
+}
+.secondPref {
+  padding: 3vh 3vw;
+}
+
+.secondPref span {
+  display: block;
+  font-size: 2.5vh;
+  margin: 3vh 0;
+}
+
+textarea {
+  padding: 2vh 2vw;
+  font-size: 2vh;
+}
+
+.submitPref {
+  display: flex;
+  justify-content: center;
+  padding: 1vh 2vw;
+}
+
+.submitPref input {
+  padding: 1.5vh 5vw;
+  margin: 0 2vw;
+  font-family: var(--sub-header-font);
+  background-color: #ff404b;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 2vh;
+}
+
+.submitPref input:hover {
+  cursor: pointer;
+}
+
+/* --=====Footer=====-- */
+
+footer {
+  padding: 3vh 0;
+}
+
+footer > * {
+  margin: 1vh 0;
+}
+
+.footLogo {
+  font-size: 2.5vh;
+}
+
+.copyright {
+  font-size: 2vh;
+}
+
+.legalPolicy span {
+  margin: 0 1vw;
+  font-size: 2vh;
+}
+
+.legalPolicy a {
+  font-size: 2vh;
+}
