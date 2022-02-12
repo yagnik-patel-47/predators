@@ -45,10 +45,14 @@ nav {
   justify-self: center;
   align-self: start;
   width: 100%;
-  clip-path: circle(100px at 150vw -55vh);
   -webkit-clip-path: circle(100px at 150vw -55vh);
+  clip-path: circle(100px at 150vw -55vh);
   background-color: #ff404b;
   line-height: initial;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clipped {
@@ -194,7 +198,7 @@ nav {
   align-items: center;
   flex-basis: initial;
   padding: 8vh 5vw;
-  width: 70vw;
+  width: 80vw;
   height: auto;
 }
 
@@ -336,7 +340,6 @@ nav {
 }
 
 .firstPref span {
-  display: block;
   font-size: 2.5vh;
   margin: 3vh 0;
 }
@@ -345,27 +348,21 @@ nav {
   padding: 1vh 2vw;
   margin: 1vh 0;
   font-size: 2vh;
-  outline: none;
 }
 
-::placeholder {
-  color: #545861;
-  font-family: var(--sub-header-font);
-  font-weight: bold;
-}
 .secondPref {
   padding: 3vh 3vw;
 }
 
 .secondPref span {
-  display: block;
   font-size: 2.5vh;
   margin: 3vh 0;
 }
 
-textarea {
+.secondPref textarea {
   padding: 2vh 2vw;
   font-size: 2vh;
+  height: 200px;
 }
 
 .submitPref {
@@ -377,16 +374,7 @@ textarea {
 .submitPref input {
   padding: 1.5vh 5vw;
   margin: 0 2vw;
-  font-family: var(--sub-header-font);
-  background-color: #ff404b;
-  border: none;
-  outline: none;
-  color: white;
   font-size: 2vh;
-}
-
-.submitPref input:hover {
-  cursor: pointer;
 }
 
 /* --=====Footer=====-- */
